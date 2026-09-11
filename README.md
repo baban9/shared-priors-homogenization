@@ -12,16 +12,20 @@ Shared feedback-tuned language-model priors can compress co-written diversity. A
 
 ## Reproduce paper numbers
 
+Requires local copies of upstream corpora under `data/real/` (see table below).
+
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-# After placing upstream corpora under data/real/ (see docs below):
-python scripts/study1_stats.py
-python scripts/make_paper_figures.py
+# MiniLM must be available in the local Hugging Face cache (offline-capable).
+.venv/bin/python scripts/reproduce_paper.py
+.venv/bin/python scripts/verify_paper_numbers.py
 cd paper && tectonic -X compile main.tex
 ```
 
-Paper tables shipped in-repo: `results/tables/paper_*.csv`
+This regenerates `results/tables/paper_*.csv`, paper figures, and syncs numbers into `paper/main.tex`.
+
+`results/summary.json` is a legacy simulation artifact and is **not** used by the paper.
 
 ## Upstream data (not redistributed here)
 

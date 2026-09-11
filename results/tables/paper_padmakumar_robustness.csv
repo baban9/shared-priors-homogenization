@@ -1,10 +1,4 @@
-spec,condition,D,filter
-tfidf_12,solo,0.7803051539772402,none
-tfidf_12,gpt3,0.7880198684522689,none
-tfidf_12,instructgpt,0.7402940195449192,none
-tfidf_unigram,solo,0.7425240377943452,none
-tfidf_unigram,gpt3,0.7477071224240591,none
-tfidf_unigram,instructgpt,0.7004332271357148,none
-tfidf_nostop,solo,0.725897411522095,none
-tfidf_nostop,gpt3,0.7302841360561061,none
-tfidf_nostop,instructgpt,0.6918727095752295,none
+spec,solo,gpt3,instructgpt
+main (1-2 gram),0.78,0.788,0.74
+unigram,0.743,0.748,0.7
+no stop-word filter,0.726,0.73,0.692

@@ -1,86 +1,49 @@
 {
-  "primary_D": {
+  "mean_D": {
     "solo": 0.7803051539772402,
     "gpt3": 0.7880198684522689,
     "instructgpt": 0.7402940195449192
   },
-  "H_igpt": 0.05127626573832421,
-  "bootstrap": {
-    "solo": {
-      "mean": 0.7799914905442181,
-      "lo": 0.7342093605229828,
-      "hi": 0.8250408258509918,
-      "p_gt0": 1.0,
-      "p_lt0": 0.0
-    },
-    "gpt3": {
-      "mean": 0.7878982089618846,
-      "lo": 0.7574537206836999,
-      "hi": 0.8189216929364889,
-      "p_gt0": 1.0,
-      "p_lt0": 0.0
-    },
-    "instructgpt": {
-      "mean": 0.7404249451422495,
-      "lo": 0.703560985096854,
-      "hi": 0.7751443536158561,
-      "p_gt0": 1.0,
-      "p_lt0": 0.0
-    },
-    "gap_solo_minus_igpt": {
-      "mean": 0.03956654540196857,
-      "lo": -0.01821429822960137,
-      "hi": 0.09893908302539713,
-      "frac_positive": 0.9072,
-      "frac_negative": 0.0928
-    },
-    "gap_gpt3_minus_igpt": {
-      "mean": 0.047473263819635014,
-      "lo": 0.001498168138245117,
-      "hi": 0.09673961157303454,
-      "frac_positive": 0.977,
-      "frac_negative": 0.023
-    },
-    "gap_solo_minus_gpt3": {
-      "mean": -0.00790671841766644,
-      "lo": -0.06256915804405136,
-      "hi": 0.04555167645659974,
-      "frac_positive": 0.3912,
-      "frac_negative": 0.6088
-    }
+  "emb_D": {
+    "solo": 0.35931912064552307,
+    "gpt3": 0.32886083126068116,
+    "instructgpt": 0.29845659136772157
   },
-  "permutation": {
-    "solo_minus_igpt": {
-      "obs": 0.04001113443232095,
-      "p_one_sided": 0.0015,
-      "n_topics": 10
-    },
-    "gpt3_minus_igpt": {
-      "obs": 0.0477258489073497,
-      "p_one_sided": 0.0005,
-      "n_topics": 10
-    },
-    "solo_minus_gpt3": {
-      "obs": -0.00771471447502875,
-      "p_one_sided": 0.723,
-      "n_topics": 10
-    }
+  "H": {
+    "solo": 0.0,
+    "gpt3": -0.00988679164261129,
+    "instructgpt": 0.05127626573832421
   },
-  "paired_topics": {
-    "n": 10,
-    "frac_igpt_lt_solo": 0.6,
-    "frac_igpt_lt_gpt3": 0.8,
-    "mean_igpt_minus_solo": -0.04001113443232095,
-    "mean_igpt_minus_gpt3": -0.0477258489073497
-  },
-  "authorship_igpt": {
-    "user_D": 0.8317299597304224,
-    "model_D": 0.8203176352461659,
-    "gap_user_minus_model": {
-      "mean": 0.011770039324264675,
-      "lo": -0.03592371246846345,
-      "hi": 0.05690544244397816,
-      "frac_positive": 0.691
+  "contrasts": [
+    {
+      "contrast": "solo - InstructGPT",
+      "estimate": 0.03956654540196857,
+      "ci95_lo": -0.01821429822960137,
+      "ci95_hi": 0.09893908302539713,
+      "boot_frac_pos": 0.9072,
+      "perm_p": 0.002002002002002002
+    },
+    {
+      "contrast": "GPT-3 - InstructGPT",
+      "estimate": 0.047473263819635014,
+      "ci95_lo": 0.001498168138245117,
+      "ci95_hi": 0.09673961157303454,
+      "boot_frac_pos": 0.977,
+      "perm_p": 0.002002002002002002
+    },
+    {
+      "contrast": "solo - GPT-3",
+      "estimate": -0.00790671841766644,
+      "ci95_lo": -0.06256915804405136,
+      "ci95_hi": 0.04555167645659974,
+      "boot_frac_pos": 0.3912,
+      "perm_p": 0.7247247247247247
     }
-  }
+  ],
+  "frac_topics_igpt_lt_solo": 0.6,
+  "frac_topics_igpt_lt_gpt3": 0.8,
+  "source": "/Users/babandeepsingh/Desktop/personal-github/continual learning/data/real/padmakumar_hai_diversity/repo/processed_data",
+  "seed": 42,
+  "n_bootstrap": 5000,
+  "n_perm": 999
 }

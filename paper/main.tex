@@ -69,7 +69,7 @@ When many people write with the same language model, two risks are often joined 
 We separate that package and test what public microdata can support.
 Re-analyzing four released corpora, we find a narrow positive result and several negative or non-identified ones.
 In the Padmakumar and He co-writing essays, InstructGPT reduces within-topic diversity relative to solo writing and relative to GPT-3; model spans under InstructGPT are less diverse than user spans.
-Topic-level permutation tests reject the null for both InstructGPT contrasts ($p=0.003$ and $p=0.001$), while the solo-versus-GPT-3 contrast does not ($p=0.71$).
+Topic-level permutation tests reject the null for both InstructGPT contrasts ($p=0.002$ and $p=0.002$), while the solo-versus-GPT-3 contrast does not ($p=0.72$).
 Vectorizer robustness checks preserve the same ordering.
 CoAuthor shows no strong acceptance dose-response on group diversity.
 Moon et al.\ materials show a concentrated model prior, but not a clean post-ChatGPT lexical collapse.
@@ -210,9 +210,9 @@ instructgpt & 100 & 0.740 & 0.298 & \phantom{-}0.051 \\
 \end{tabular}}
 
 Table~\ref{tab:contrasts} reports topic-bootstrap gaps.
-The GPT-3 minus InstructGPT gap is $0.047$ (95\% CI $[0.001, 0.097]$; permutation $p=0.001$).
-The solo minus InstructGPT gap is $0.040$ (CI $[-0.018, 0.099]$; $p=0.003$); $90.7\%$ of bootstrap replicates are positive.
-The solo minus GPT-3 gap is near zero ($p=0.71$).
+The GPT-3 minus InstructGPT gap is $0.047$ (95\% CI $[0.001, 0.097]$; permutation $p=0.002$).
+The solo minus InstructGPT gap is $0.040$ (CI $[-0.018, 0.099]$; $p=0.002$); $90.7\%$ of bootstrap replicates are positive.
+The solo minus GPT-3 gap is near zero ($p=0.72$).
 H1 and H2 are supported by the permutation tests and by the GPT-3 contrast interval; the solo--InstructGPT interval is wide because only ten topics are available.
 
 \ctable{Study 1 diversity gaps (topic bootstrap $95\%$ CIs; one-sided permutation $p$).}{tab:contrasts}{%
@@ -222,13 +222,13 @@ H1 and H2 are supported by the permutation tests and by the GPT-3 contrast inter
 \toprule
 Contrast & Est. & CI lo & CI hi & $p$ \\
 \midrule
-solo $-$ IGPT & \phantom{-}0.040 & $-0.018$ & 0.099 & 0.003 \\
-GPT-3 $-$ IGPT & \phantom{-}0.047 & \phantom{-}0.001 & 0.097 & 0.001 \\
-solo $-$ GPT-3 & $-0.008$ & $-0.063$ & 0.046 & 0.709 \\
+solo $-$ IGPT & \phantom{-}0.040 & $-0.018$ & 0.099 & 0.002 \\
+GPT-3 $-$ IGPT & \phantom{-}0.047 & \phantom{-}0.001 & 0.097 & 0.002 \\
+solo $-$ GPT-3 & $-0.008$ & $-0.063$ & 0.046 & 0.725 \\
 \bottomrule
 \end{tabular}}
 
-Under InstructGPT, model spans are less diverse than user spans (Table~\ref{tab:auth}: TF--IDF $0.820$ vs $0.832$; embeddings $0.316$ vs $0.364$).
+Under InstructGPT, model spans are less diverse than user spans (Table~\ref{tab:auth}: TF--IDF $0.820$ vs $0.835$; embeddings $0.316$ vs $0.364$).
 Under GPT-3, model spans are more diverse than user spans.
 H3 is directional; the InstructGPT authorship gap is small and its topic-bootstrap interval includes zero.
 
@@ -240,7 +240,7 @@ Condition & $N$ & TF--IDF $D$ & Emb.\ $D$ \\
 \midrule
 gpt3 user & 96 & 0.849 & 0.361 \\
 gpt3 model & 94 & 0.897 & 0.453 \\
-instructgpt user & 96 & 0.832 & 0.364 \\
+instructgpt user & 98 & 0.835 & 0.364 \\
 instructgpt model & 98 & 0.820 & 0.316 \\
 \bottomrule
 \end{tabular}}

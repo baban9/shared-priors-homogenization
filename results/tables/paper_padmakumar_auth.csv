@@ -1,5 +1,5 @@
 condition,N,tfidf_D,emb_D
 gpt3 user,96,0.849,0.361
 gpt3 model,94,0.897,0.453
-instructgpt user,96,0.832,0.364
+instructgpt user,98,0.835,0.364
 instructgpt model,98,0.82,0.316

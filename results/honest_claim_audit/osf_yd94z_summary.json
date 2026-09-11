@@ -1,75 +1,15 @@
 {
-  "pre_post_agg": [
+  "matched": [
     {
-      "ChatGPT": "post",
-      "n": 30544,
-      "word_dist_mean": 0.8323553455040616,
-      "word_dist_std": 0.00852790223912536,
-      "document_dist_mean": 0.2144461109819167,
-      "document_dist_std": 0.04747547609401542,
-      "year_min": 2024,
-      "year_max": 2025
+      "source": "human",
+      "within_prompt_doc_dist": 0.3021753057
     },
     {
-      "ChatGPT": "pre",
-      "n": 56558,
-      "word_dist_mean": 0.8304217504589374,
-      "word_dist_std": 0.010788147992251897,
-      "document_dist_mean": 0.2223200006185943,
-      "document_dist_std": 0.049440151087217526,
-      "year_min": 2019,
-      "year_max": 2022
+      "source": "gpt",
+      "within_prompt_doc_dist": 0.11647572950333332
     }
   ],
-  "by_year": [
-    {
-      "year": 2019,
-      "n": 13069,
-      "word_dist": 0.8303647607046446,
-      "document_dist": 0.22338334601128798
-    },
-    {
-      "year": 2020,
-      "n": 11880,
-      "word_dist": 0.8302535631406198,
-      "document_dist": 0.22487008716960172
-    },
-    {
-      "year": 2021,
-      "n": 16486,
-      "word_dist": 0.8301532265354609,
-      "document_dist": 0.2194425578785366
-    },
-    {
-      "year": 2022,
-      "n": 15123,
-      "word_dist": 0.8309132666082693,
-      "document_dist": 0.22253461622723744
-    },
-    {
-      "year": 2023,
-      "n": 14427,
-      "word_dist": 0.8312880995449017,
-      "document_dist": 0.2223634856087329
-    },
-    {
-      "year": 2024,
-      "n": 15009,
-      "word_dist": 0.8319153563949333,
-      "document_dist": 0.21550168756025861
-    },
-    {
-      "year": 2025,
-      "n": 15535,
-      "word_dist": 0.8327803188869929,
-      "document_dist": 0.2134262752004984
-    }
-  ],
-  "matched_human_vs_gpt": {
-    "human_mean_within_prompt_doc_dist": 0.3021753057,
-    "gpt_mean": 0.11647572950333332
-  },
-  "within_subject_agg": [
+  "within": [
     {
       "condition": "essay",
       "n": 203,
@@ -95,40 +35,25 @@
       "creativity": 0.6872056516551723
     }
   ],
-  "paired": {
-    "gpt_gen_vs_essay": {
-      "n": 203,
-      "mean_a": 0.2932550562118227,
-      "mean_b": 0.17757167756650244,
-      "mean_delta_b_minus_a": -0.11568337864532022,
-      "frac_b_lower": 0.9458128078817734
+  "prepost_word": [
+    {
+      "ChatGPT": "post",
+      "n": 3570,
+      "word_dist_mean": 0.8371939895671564,
+      "word_dist_std": 0.0056550916924060415,
+      "document_dist_mean": 0.2144461109819167
     },
-    "gpt_revised_vs_essay": {
-      "n": 203,
-      "mean_a": 0.2932550562118227,
-      "mean_b": 0.2190374374778325,
-      "mean_delta_b_minus_a": -0.07421761873399015,
-      "frac_b_lower": 0.916256157635468
+    {
+      "ChatGPT": "pre",
+      "n": 7140,
+      "word_dist_mean": 0.8354904141974323,
+      "word_dist_std": 0.005784006407942203,
+      "document_dist_mean": 0.2223200006185943
     }
+  ],
+  "frac_lower_than_unaided": {
+    "gpt_revised_essay": 0.916256157635468,
+    "gpt_gen_essay": 0.9458128078817734
   },
-  "corr_word_creativity": {
-    "essay": 0.5524575635201954,
-    "gpt_gen_essay": 0.48522373293525634,
-    "gpt_revised_essay": 0.4720667976786963
-  },
-  "support": [
-    "GU observational: post document_dist lower (delta=-0.0079)",
-    "Pure GPT essays much less within-prompt diverse than human (gpt=0.116 vs human=0.302)",
-    "gpt_gen_vs_essay: lower document_dist than unaided essay (delta=-0.1157, frac_lower=0.95)",
-    "gpt_revised_vs_essay: lower document_dist than unaided essay (delta=-0.0742, frac_lower=0.92)"
-  ],
-  "refute": [
-    "GU observational: post-ChatGPT word_dist HIGHER than pre (delta=0.0019)"
-  ],
-  "mixed": [
-    "Pure GPT vs human compares model-only text to humans; does not measure human+LLM co-writing homogenization"
-  ],
-  "cannot_test": [
-    "Pre/post ChatGPT is observational; year/cohort confounds; not proof of shared-prior mechanism"
-  ]
+  "source": "/Users/babandeepsingh/Desktop/personal-github/continual learning/data/real/osf_yd94z/02_data/semantic_disjunction"
 }
