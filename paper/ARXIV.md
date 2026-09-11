@@ -30,7 +30,7 @@ cs.AI
 
 **Comments**
 ```
-10 pages. Code and analysis tables: https://github.com/baban9/shared-priors-homogenization
+10 pages. Workshop-style technical report. Code: https://github.com/baban9/shared-priors-homogenization
 ```
 
 **Abstract**

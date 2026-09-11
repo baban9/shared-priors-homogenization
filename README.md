@@ -2,6 +2,7 @@
 
 Independent reanalysis of public co-writing corpora.
 
+**Format:** workshop-style technical report (not a full conference paper)  
 **Paper:** `paper/main.pdf`  
 **Author:** Babandeep Singh (`babandeep193@gmail.com`)  
 **Code:** https://github.com/baban9/shared-priors-homogenization  

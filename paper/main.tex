@@ -59,25 +59,26 @@ Babandeep Singh\\
 Independent Researcher
 }
 
-\date{}
+\date{Technical Report / Workshop Note\\[0.25em]\today}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-When many people write with the same language model, two risks are often joined into one story: outputs become more alike, and later unaided skill weakens.
-We separate that package and test what public microdata can support.
-Re-analyzing four released corpora, we find a narrow positive result and several negative or non-identified ones.
+This short technical report separates two often-joined worries about language-model writing help: homogenization of outputs, and later transfer debt.
+We ask only what four public corpora can support.
+Re-analyzing those releases, we find one narrow positive result and several negative or non-identified ones.
 In the Padmakumar and He co-writing essays, InstructGPT reduces within-topic diversity relative to solo writing and relative to GPT-3; model spans under InstructGPT are less diverse than user spans.
 Topic-level permutation tests reject the null for both InstructGPT contrasts ($p=0.002$ and $p=0.002$), while the solo-versus-GPT-3 contrast does not ($p=0.72$).
+The solo--InstructGPT bootstrap interval is wide and includes zero, so that contrast is suggestive rather than definitive.
 Vectorizer robustness checks preserve the same ordering.
 CoAuthor shows no strong acceptance dose-response on group diversity.
 Moon et al.\ materials show a concentrated model prior, but not a clean post-ChatGPT lexical collapse.
 Public study-companion logs cannot identify transfer debt.
-We keep prior-driven homogenization, drop assistance-as-such claims, and leave debt open.
+We keep prior-driven homogenization as a limited claim, drop assistance-as-such claims, and leave debt open.
 \end{abstract}
 
-\noindent\textbf{CCS Concepts:} Human-centered computing $\rightarrow$ Empirical studies in HCI.
+\noindent\textbf{Note type:} workshop-style technical report (public-data reanalysis; no new human experiment).
 
 \noindent\textbf{Keywords:} large language models, homogenization, shared priors, co-writing, open reanalysis
 
@@ -91,7 +92,7 @@ A second question is cognitive debt: weaker performance once the helper is remov
 These worries are often told as one mechanism, \emph{cognitive convergence}: offloading onto a shared prior that both compresses diversity and leaves a transfer cost.
 That framing is a research program, not a finding, until public data can carry it.
 
-This paper is a falsification-oriented reassessment of four public corpora.
+This note is a falsification-oriented reassessment of four public corpora, written as a short workshop-style technical report rather than a full conference paper.
 We rank claims by support:
 \begin{itemize}
   \item \textbf{Keep:} shared feedback-tuned priors can compress co-written diversity.
@@ -99,49 +100,28 @@ We rank claims by support:
   \item \textbf{Leave open:} transfer debt as part of the same mechanism.
 \end{itemize}
 
-\paragraph{Contributions.}
-(1)~A controlled reanalysis of Padmakumar and He~\citep{padmakumar2024diversity} with topic bootstrap intervals, permutation tests, and vectorizer robustness.
-(2)~A CoAuthor dose check that does not confirm strong acceptance-driven group homogenization~\citep{lee2022coauthor}.
-(3)~A Moon et al.\ contrast between a concentrated model prior and mixed observational era effects~\citep{moon2026disjunction,osfyd94z2026}.
-(4)~An explicit non-identification result for debt in public study-companion logs~\citep{simsek2025companion,osfswytk2025}.
+\paragraph{What this note does.}
+(1)~Reanalyzes Padmakumar and He~\citep{padmakumar2024diversity} with topic bootstrap intervals, permutation tests, and vectorizer robustness.
+(2)~Checks CoAuthor for an acceptance dose pattern on group diversity~\citep{lee2022coauthor}.
+(3)~Contrasts a concentrated model prior with mixed observational era effects in Moon et al.~\citep{moon2026disjunction,osfyd94z2026}.
+(4)~States an explicit non-identification result for debt in public study-companion logs~\citep{simsek2025companion,osfswytk2025}.
 
 \section{Related Work}
 
-\subsection{Homogenization under shared generative priors}
-A growing literature asks whether language-model assistance compresses the set of ideas or texts that people produce.
-Padmakumar and He~\citep{padmakumar2024diversity} provide the cleanest public contrast for writing: argumentative essays under solo, GPT-3, and InstructGPT conditions, with sentence-level authorship masks.
-Their design matters because it separates feedback-tuned assistance from base-model assistance, which is exactly the split our reanalysis exploits.
-Anderson et al.~\citep{anderson2024homogenization} report homogenization in creative ideation, but without public microdata for independent reanalysis.
-Moon et al.~\citep{moon2026disjunction,osfyd94z2026} study admissions writing and separate surface (lexical) diversity from conceptual originality.
-Their released materials include matched human versus model comparisons and within-subject unaided, GPT-revised, and GPT-generated essays, which lets us test whether the model prior itself is narrow even when observational era contrasts are mixed.
+Padmakumar and He~\citep{padmakumar2024diversity} provide the cleanest public writing contrast: solo, GPT-3, and InstructGPT essays with authorship masks, separating feedback-tuned help from base-model help.
+Anderson et al.~\citep{anderson2024homogenization} report ideation homogenization without public microdata.
+Moon et al.~\citep{moon2026disjunction,osfyd94z2026} release admissions-writing materials that separate surface diversity from conceptual originality and include matched human--model and within-subject GPT conditions.
+Acemoglu et al.~\citep{acemoglu2026collapse} formalize population knowledge collapse when many agents share similar AI outputs.
 
-At the population scale, Acemoglu et al.~\citep{acemoglu2026collapse} formalize knowledge collapse when many agents condition on similar AI outputs.
-That theory motivates our question, but it does not identify which public co-writing corpora already show compression.
+Lee et al.~\citep{lee2022coauthor} release CoAuthor, a large GPT-3 co-writing log with suggestion accepts but no unaided arm.
+Dell'Acqua et al.~\citep{dellacqua2025frontier} show AI can raise or hurt task performance depending on the task; that jagged frontier is about quality, not cross-person diversity.
 
-\subsection{Co-writing systems and interaction dose}
-Lee et al.~\citep{lee2022coauthor} released CoAuthor, a large GPT-3 co-writing log with suggestion requests and acceptances.
-The corpus is valuable for studying how people use suggestions, but it has no unaided writing arm and therefore cannot estimate homogenization relative to solo baselines.
-We use it only for a weaker dose question: whether higher acceptance rates coincide with lower cross-session diversity.
-Dell'Acqua et al.~\citep{dellacqua2025frontier} show that AI can raise productivity and quality on some knowledge tasks and hurt them on others.
-That jagged frontier is about task performance, not cross-person diversity; we keep the distinction explicit so performance gains are not mistaken for population variety.
+Cognitive offloading~\citep{risko2016offloading} and automation misuse~\citep{parasuraman1997automation} predate LLMs.
+Kosmyna et al.~\citep{kosmyna2025eeg}, Barcaui~\citep{barcaui2025crutch}, and Lee et al.~\citep{lee2025critical} report debt, retention cost, or effort and confidence shifts, mostly without open microdata for reanalysis.
+{\c{S}}im{\c{s}}ek et al.~\citep{simsek2025companion,osfswytk2025} release companion logs, but both processed arms still use ChatGPT, so debt versus unaided learning is not identified.
 
-\subsection{Offloading, over-reliance, and transfer debt}
-Cognitive offloading~\citep{risko2016offloading} and automation misuse~\citep{parasuraman1997automation} predate LLMs and warn that helpers can change what people encode and later recall.
-Kosmyna et al.~\citep{kosmyna2025eeg} report EEG and behavioral signs of cognitive debt when writers rely on ChatGPT for essays.
-Barcaui~\citep{barcaui2025crutch} finds retention costs in a randomized trial framed as a cognitive crutch.
-Lee et al.~\citep{lee2025critical} survey knowledge workers who report lower perceived effort and confidence shifts under generative AI.
-These studies support debt as a live hypothesis, but most do not release microdata, and none of our public corpora identify debt versus unaided learning by themselves.
-
-{\c{S}}im{\c{s}}ek et al.~\citep{simsek2025companion,osfswytk2025} do release study-companion logs with retention and transfer scores.
-Both processed arms still use ChatGPT, so the public files cannot answer whether AI assistance creates transfer debt relative to unaided study.
-We treat that as a non-identification result, not a null finding.
-
-\subsection{What this paper adds}
-Prior work often joins homogenization and debt into one story.
-We separate them and ask what four public corpora can support.
-Relative to Padmakumar and He~\citep{padmakumar2024diversity}, we add topic-level bootstrap intervals, permutation tests, and vectorizer robustness.
-Relative to CoAuthor~\citep{lee2022coauthor} and Moon et al.~\citep{moon2026disjunction}, we report negative or mixed checks that bound overclaims.
-Relative to debt studies~\citep{kosmyna2025eeg,barcaui2025crutch,simsek2025companion}, we state when public logs cannot identify the claim at all.
+This note does not propose a new theory.
+It ranks what the public corpora above can already support.
 
 \section{Claims}
 
@@ -213,7 +193,8 @@ Table~\ref{tab:contrasts} reports topic-bootstrap gaps.
 The GPT-3 minus InstructGPT gap is $0.047$ (95\% CI $[0.001, 0.097]$; permutation $p=0.002$).
 The solo minus InstructGPT gap is $0.040$ (CI $[-0.018, 0.099]$; $p=0.002$); $90.7\%$ of bootstrap replicates are positive.
 The solo minus GPT-3 gap is near zero ($p=0.72$).
-H1 and H2 are supported by the permutation tests and by the GPT-3 contrast interval; the solo--InstructGPT interval is wide because only ten topics are available.
+H1 and H2 are directionally consistent with the permutation tests and with the GPT-3 contrast interval; the solo--InstructGPT bootstrap interval includes zero, so we treat H1 as limited support rather than a definitive estimate.
+InstructGPT is below solo in $60\%$ of topics and below GPT-3 in $80\%$.
 
 \ctable{Study 1 diversity gaps (topic bootstrap $95\%$ CIs; one-sided permutation $p$).}{tab:contrasts}{%
 \small
@@ -317,7 +298,7 @@ Table~\ref{tab:verdicts} and Figure~\ref{fig:multi} summarize the four-corpus ev
 \toprule
 Claim & Verdict & Where \\
 \midrule
-InstructGPT homogenizes vs solo/GPT-3 & Supported & Padmakumar \\
+InstructGPT homogenizes vs solo/GPT-3 & Limited support & Padmakumar \\
 Any LM assistance homogenizes & Not supported & Padmakumar \\
 Accept dose on group diversity & Weak / mixed & CoAuthor \\
 Model-only text narrower than human & Supported & Moon et al. \\
@@ -336,18 +317,19 @@ Unified cognitive convergence & Not established & All \\
 
 \section{Discussion}
 
-The result worth keeping is precise.
+The result worth keeping is precise and limited.
 A shared feedback-tuned prior can pull co-written essays closer together~\citep{padmakumar2024diversity}.
-Permutation tests and the GPT-3 contrast interval back that claim.
+Permutation tests and the GPT-3 contrast interval back that claim; the solo--InstructGPT bootstrap interval remains wide.
 Base GPT-3 does not reproduce the drop, so homogenization is better explained by the prior people share than by help as such.
 
-The larger cognitive-convergence package does not earn the same status.
+The larger cognitive-convergence package does not earn the same status in these public files.
 CoAuthor lacks a clear acceptance-to-diversity dose curve~\citep{lee2022coauthor}.
 Moon et al.\ show that the model itself is a narrow attractor, while observational word diversity does not fall after ChatGPT~\citep{moon2026disjunction}.
 Text homogenization is not proof of offloading.
 Debt remains a separate question wherever unaided controls are missing.
 
 For evaluation practice, report three quantities apart: assisted quality, cross-person diversity under a shared tool, and tool-removed transfer.
+A full conference paper would need a new controlled study; this note only ranks existing public evidence.
 
 \section{Limitations}
 
@@ -356,7 +338,7 @@ Authorship compression under InstructGPT is directional but not tightly estimate
 CoAuthor dose analyses are correlational and lack solo writing.
 Moon observational contrasts confound year with possible AI use.
 Learning-companion arms have no no-AI control.
-This paper is a public-data reassessment, not a new human experiment.
+This note is a public-data reassessment, not a new human experiment.
 Era-level Moon document-distance aggregates reuse the released OSF summary tables rather than a full from-scratch re-derivation of every embedding distance.
 
 \section*{Ethics statement}
@@ -369,6 +351,7 @@ Upstream consent and licensing remain those of the original studies.
 Public co-writing data support a limited claim: shared feedback-tuned priors can compress writing diversity.
 They do not support a blanket claim that assistance homogenizes, and they do not establish unified cognitive convergence with proven transfer debt.
 Keep the prior result. Drop the overclaim. Leave debt to designs that can actually test it.
+This technical report is meant as a workshop-scale evidence map, not as a substitute for a new experiment.
 
 \section*{Data and code}
 Upstream corpora:

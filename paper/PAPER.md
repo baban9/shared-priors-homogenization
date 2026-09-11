@@ -1,13 +1,14 @@
 # Paper
 
-Canonical PDF: `paper/main.pdf`
+Canonical PDF: `paper/main.pdf`  
+**Format:** workshop-style technical report / public-data note
 
 **Author:** Babandeep Singh (`babandeep193@gmail.com`)  
 **Code:** https://github.com/baban9/shared-priors-homogenization  
 **arXiv prep:** `paper/ARXIV.md`
 
 ## Claim
-Shared feedback-tuned priors can compress co-written diversity.
+Shared feedback-tuned priors can compress co-written diversity (limited support).
 Not: any assistance homogenizes.
 Not established: unified cognitive convergence with debt.
 
@@ -19,6 +20,5 @@ Not established: unified cognitive convergence with debt.
 
 ## Artifacts
 - Figure: `paper/figures/fig_multicorpus.png`
-- Stats: `scripts/study1_stats.py`, `results/tables/paper_study1_contrasts.csv`
-- Tables: `results/tables/paper_*.csv`
+- Stats: `scripts/reproduce_paper.py`, `results/tables/paper_*.csv`
 - Audit: `results/honest_claim_audit/HOLISTIC_CLAIM_VERDICT.md`
