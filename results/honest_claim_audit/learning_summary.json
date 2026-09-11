@@ -1,0 +1,145 @@
+{
+  "support": [
+    "data_study_1 transfer-learning_score: high-help(transcript) - low-help(summary) = -0.142 (supports transfer debt)",
+    "data_study_2 transfer-learning_score: high-help(question) - low-help(summary) = -0.206 (supports transfer debt)"
+  ],
+  "refute": [
+    "data_study_1/transcript: rank corr help_count vs transfer = 0.246 (n=50) (more help, better transfer)"
+  ],
+  "mixed": [
+    "data_study_1 post-test_score: high-help(transcript) - low-help(summary) = -0.358 (help also hurts immediate score)",
+    "data_study_2 post-test_score: high-help(question) - low-help(summary) = -0.036",
+    "data_study_1/summary: rank corr help_count vs transfer = 0.026 (n=51)",
+    "data_study_2/question: rank corr help_count vs transfer = 0.078 (n=105)",
+    "data_study_2/summary: rank corr help_count vs transfer = -0.050 (n=110)"
+  ],
+  "cannot_test": [
+    "Learning companion may not use a shared commercial LLM prior like ChatGPT; condition design must be read carefully"
+  ],
+  "results": {
+    "data_study_1": [
+      {
+        "condition": "summary",
+        "n": 51,
+        "pre-test_score_mean": 14.92156862745098,
+        "pre-test_score_std": 2.6671568176985914,
+        "post-test_score_mean": 18.11764705882353,
+        "post-test_score_std": 2.5818370113043883,
+        "transfer-learning_score_mean": 7.911764705882353,
+        "transfer-learning_score_std": 2.7197534490334623,
+        "retention-learning_score_mean": 3.196078431372549,
+        "retention-learning_score_std": 2.9053027920899206,
+        "number_of_times_requested_help_mean": 4.2745098039215685,
+        "number_of_times_requested_help_std": 2.8571204480913925,
+        "mental_effort_mean": 5.803921568627451,
+        "mental_effort_std": 1.3117866875851005
+      },
+      {
+        "condition": "transcript",
+        "n": 50,
+        "pre-test_score_mean": 14.34,
+        "pre-test_score_std": 2.22793031071166,
+        "post-test_score_mean": 17.76,
+        "post-test_score_std": 3.0941683132984874,
+        "transfer-learning_score_mean": 7.77,
+        "transfer-learning_score_std": 2.9402380855978314,
+        "retention-learning_score_mean": 3.42,
+        "retention-learning_score_std": 3.4409894163256745,
+        "number_of_times_requested_help_mean": 4.56,
+        "number_of_times_requested_help_std": 2.73421256806177,
+        "mental_effort_mean": 5.58,
+        "mental_effort_std": 1.5265005999450683
+      }
+    ],
+    "contrasts": [
+      {
+        "study": "data_study_1",
+        "metric": "transfer-learning_score",
+        "high_help_cond": "transcript",
+        "low_help_cond": "summary",
+        "high_help_mean": 7.77,
+        "low_help_mean": 7.911764705882353,
+        "delta_high_minus_low": -0.14176470588235368
+      },
+      {
+        "study": "data_study_1",
+        "metric": "retention-learning_score",
+        "high_help_cond": "transcript",
+        "low_help_cond": "summary",
+        "high_help_mean": 3.42,
+        "low_help_mean": 3.196078431372549,
+        "delta_high_minus_low": 0.22392156862745072
+      },
+      {
+        "study": "data_study_1",
+        "metric": "post-test_score",
+        "high_help_cond": "transcript",
+        "low_help_cond": "summary",
+        "high_help_mean": 17.76,
+        "low_help_mean": 18.11764705882353,
+        "delta_high_minus_low": -0.35764705882352743
+      },
+      {
+        "study": "data_study_2",
+        "metric": "transfer-learning_score",
+        "high_help_cond": "question",
+        "low_help_cond": "summary",
+        "high_help_mean": 6.276190476190476,
+        "low_help_mean": 6.4818181818181815,
+        "delta_high_minus_low": -0.20562770562770538
+      },
+      {
+        "study": "data_study_2",
+        "metric": "retention-learning_score",
+        "high_help_cond": "question",
+        "low_help_cond": "summary",
+        "high_help_mean": 4.142857142857143,
+        "low_help_mean": 4.1909090909090905,
+        "delta_high_minus_low": -0.048051948051947235
+      },
+      {
+        "study": "data_study_2",
+        "metric": "post-test_score",
+        "high_help_cond": "question",
+        "low_help_cond": "summary",
+        "high_help_mean": 17.6,
+        "low_help_mean": 17.636363636363637,
+        "delta_high_minus_low": -0.036363636363635266
+      }
+    ],
+    "data_study_2": [
+      {
+        "condition": "question",
+        "n": 105,
+        "pre-test_score_mean": 13.457142857142857,
+        "pre-test_score_std": 2.5533860303096003,
+        "post-test_score_mean": 17.6,
+        "post-test_score_std": 2.4518438901240143,
+        "transfer-learning_score_mean": 6.276190476190476,
+        "transfer-learning_score_std": 2.3441631198789756,
+        "retention-learning_score_mean": 4.142857142857143,
+        "retention-learning_score_std": 3.064776850417848,
+        "number_of_times_requested_help_mean": 7.923809523809524,
+        "number_of_times_requested_help_std": 6.3665218708962845,
+        "mental_effort_mean": 6.742857142857143,
+        "mental_effort_std": 1.5129477813232648
+      },
+      {
+        "condition": "summary",
+        "n": 110,
+        "pre-test_score_mean": 13.445454545454545,
+        "pre-test_score_std": 2.5181410197132794,
+        "post-test_score_mean": 17.636363636363637,
+        "post-test_score_std": 2.7485685105853106,
+        "transfer-learning_score_mean": 6.4818181818181815,
+        "transfer-learning_score_std": 2.493962685145018,
+        "retention-learning_score_mean": 4.1909090909090905,
+        "retention-learning_score_std": 3.3276584999932233,
+        "number_of_times_requested_help_mean": 6.9818181818181815,
+        "number_of_times_requested_help_std": 4.808215099566896,
+        "mental_effort_mean": 6.572727272727272,
+        "mental_effort_std": 1.7051411247203785
+      }
+    ]
+  }
+}

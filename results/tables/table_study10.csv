@@ -1,0 +1,8 @@
+claim,human_source,human_direction,our_probe,our_direction,consistent
+Shared LLM assistance reduces cross-user diversity,Padmakumar & He ICLR 2024; Anderson et al. C&C 2024,diversity_down,Study A / Study I shared_prior,diversity_down,True
+Assistance can look fine immediately while later retention falls,Barcaui SSHO 2025; Kosmyna et al. arXiv 2025,retention_down,Study C encoding vs delayed recall,retention_down,True
+Confidence / perceived ability can track assisted success too closely,Lee et al. CHI 2025,metacognitive_inflation,Study D attribution leak,inflation_up,True
+Fluent automation raises over-acceptance of bad advice,Parasuraman & Riley 1997 (classic); LLM fluency setting,bias_up,Study F wrong-advice acceptance,bias_up,True
+Removing the helper exposes a transfer / debt gap,Kosmyna et al. arXiv 2025,transfer_down,Study G transfer debt,debt_up,True
+Reflection / challenge can recover some diversity vs plain LLM use,Design implication from HCI critical-use literature,diversity_partial_recovery,Study H reflection / adversarial arms,partial_recovery,True
+"Homogenization requires a shared attractor, not assistance alone",Implied by Padmakumar InstructGPT vs base; Anderson ChatGPT vs alt tool,shared_prior_necessary,Study I shared_fixed vs hetero_fixed,shared_H_greater,True

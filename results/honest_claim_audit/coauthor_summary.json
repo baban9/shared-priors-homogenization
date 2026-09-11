@@ -1,0 +1,67 @@
+{
+  "n_sessions_ge40": 1218,
+  "n_with_gets": 1185,
+  "n_never_get": 33,
+  "accept_tercile": [
+    {
+      "accept_bin": "low",
+      "n": 395,
+      "mean_accept_rate": 0.42658856609394064,
+      "mean_words": 68.05316455696203,
+      "tfidf_diversity": 0.9289286120291003
+    },
+    {
+      "accept_bin": "mid",
+      "n": 395,
+      "mean_accept_rate": 0.7307620136885324,
+      "mean_words": 62.68101265822785,
+      "tfidf_diversity": 0.928753660485767
+    },
+    {
+      "accept_bin": "high",
+      "n": 395,
+      "mean_accept_rate": 0.9303471762843986,
+      "mean_words": 59.741772151898736,
+      "tfidf_diversity": 0.9219415668291402
+    }
+  ],
+  "get_tercile": [
+    {
+      "get_bin": "few",
+      "n": 395,
+      "mean_gets": 4.974683544303797,
+      "mean_sim_to_mean": 0.2570864520981011,
+      "tfidf_diversity": 0.9328206054384734
+    },
+    {
+      "get_bin": "mid",
+      "n": 395,
+      "mean_gets": 10.531645569620252,
+      "mean_sim_to_mean": 0.26668018501793883,
+      "tfidf_diversity": 0.9293902873207617
+    },
+    {
+      "get_bin": "many",
+      "n": 395,
+      "mean_gets": 23.01772151898734,
+      "mean_sim_to_mean": 0.26723857445874327,
+      "tfidf_diversity": 0.9285780900182466
+    }
+  ],
+  "rank_corr_accept_vs_sim_to_mean": 0.17814949302595753,
+  "diversity_never_get": 0.9125074969594198,
+  "diversity_requested": 0.9312648503171257,
+  "limitation": "No solo/unaided control condition in CoAuthor; all sessions are co-writing UI.",
+  "support": [
+    "Higher accept_rate associates with closer-to-mean text (rho=0.178)"
+  ],
+  "refute": [
+    "Sessions that requested suggestions MORE diverse than never-get"
+  ],
+  "mixed": [
+    "Accept terciles similar diversity (low=0.929, high=0.922)"
+  ],
+  "cannot_test": [
+    "No unaided baseline: cannot test homogenization vs solo"
+  ]
+}

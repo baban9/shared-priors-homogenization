@@ -1,0 +1,3 @@
+condition,n,pre-test_score_mean,pre-test_score_std,post-test_score_mean,post-test_score_std,transfer-learning_score_mean,transfer-learning_score_std,retention-learning_score_mean,retention-learning_score_std,number_of_times_requested_help_mean,number_of_times_requested_help_std,mental_effort_mean,mental_effort_std
+summary,51,14.92156862745098,2.6671568176985914,18.11764705882353,2.5818370113043883,7.911764705882353,2.7197534490334623,3.196078431372549,2.9053027920899206,4.2745098039215685,2.8571204480913925,5.803921568627451,1.3117866875851005
+transcript,50,14.34,2.22793031071166,17.76,3.0941683132984874,7.77,2.9402380855978314,3.42,3.4409894163256745,4.56,2.73421256806177,5.58,1.5265005999450683

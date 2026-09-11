@@ -1,0 +1,4 @@
+condition,N,tfidf_D,emb_D,H_vs_solo
+solo,99,0.78,0.359,0.0
+gpt3,97,0.788,0.329,-0.01
+instructgpt,100,0.74,0.298,0.051

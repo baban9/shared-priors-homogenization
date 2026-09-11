@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cognitive-convergence"
+version = "0.1.0"
+description = "Reproducible research on cognitive convergence under shared LLM priors"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.11",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "seaborn>=0.13",
+  "scikit-learn>=1.3",
+  "tqdm>=4.66",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+  "arxiv>=2.0",
+  "pypdf>=4.0",
+  "statsmodels>=0.14",
+  "networkx>=3.1",
+  "tabulate>=0.9",
+  "rich>=13.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

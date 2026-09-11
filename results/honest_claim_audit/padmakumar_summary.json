@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "solo_D": 0.7803051539772402,
+    "gpt3_D": 0.7880198684522689,
+    "instructgpt_D": 0.7402940195449192,
+    "frac_topics_igpt_lower_than_solo": 0.6,
+    "frac_topics_gpt3_lower_than_solo": 0.5,
+    "frac_topics_igpt_lower_than_gpt3": 0.8,
+    "mean_delta_igpt_solo": -0.04001113443232095,
+    "mean_delta_gpt3_solo": 0.00771471447502875,
+    "gpt3_user_D": 0.8486861052670589,
+    "gpt3_user_n_groups": 10,
+    "gpt3_model_D": 0.8972031789938274,
+    "gpt3_model_n_groups": 10,
+    "instructgpt_user_D": 0.8317299597304224,
+    "instructgpt_user_n_groups": 10,
+    "instructgpt_model_D": 0.8203176352461659,
+    "instructgpt_model_n_groups": 10
+  },
+  "support": [
+    "InstructGPT full-essay within-topic D < solo",
+    "InstructGPT D < GPT-3 D",
+    "GPT-3 does not reduce diversity vs solo (sharedness not = any assistance)",
+    "InstructGPT lower than solo in 60% of topics",
+    "Under InstructGPT, model spans less diverse than user spans",
+    "Under GPT-3, model spans more diverse than user spans (contrast)"
+  ],
+  "refute": [],
+  "mixed": []
+}

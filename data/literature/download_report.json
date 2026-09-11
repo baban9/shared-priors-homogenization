@@ -1,0 +1,65 @@
+{
+  "present": [
+    {
+      "id": "lee2022coauthor",
+      "path": "papers/pdfs/lee2022coauthor_2201.06796.pdf",
+      "bytes": 2005812
+    },
+    {
+      "id": "padmakumar2024diversity",
+      "path": "papers/pdfs/padmakumar2024diversity_2309.05196.pdf",
+      "bytes": 1158738
+    },
+    {
+      "id": "moon2026disjunction",
+      "path": "papers/pdfs/moon2026disjunction_jsz58_v6.pdf",
+      "bytes": 11788357
+    },
+    {
+      "id": "simsek2025companion",
+      "path": "papers/pdfs/simsek2025companion_h2se3.pdf",
+      "bytes": 642883
+    },
+    {
+      "id": "lee2025critical",
+      "path": "papers/pdfs/lee2025critical_chi2025.pdf",
+      "bytes": 1022664
+    },
+    {
+      "id": "barcaui2025crutch",
+      "path": "papers/pdfs/barcaui2025crutch_ssho.pdf",
+      "bytes": 3095020
+    },
+    {
+      "id": "acemoglu2026collapse",
+      "path": "papers/pdfs/acemoglu2026collapse_nber34910.pdf",
+      "bytes": 767329
+    },
+    {
+      "id": "anderson2024homogenization",
+      "path": "papers/pdfs/anderson2024homogenization_cc2024.pdf",
+      "bytes": 880283
+    },
+    {
+      "id": "kosmyna2025eeg",
+      "path": "papers/pdfs/kosmyna2025eeg_2506.08872.pdf",
+      "bytes": 38177802
+    },
+    {
+      "id": "dellacqua2025frontier",
+      "path": "papers/pdfs/dellacqua2025frontier_jagged.pdf",
+      "bytes": 3342427
+    },
+    {
+      "id": "parasuraman1997automation",
+      "path": "papers/pdfs/parasuraman1997automation_hf.pdf",
+      "bytes": 1955281
+    },
+    {
+      "id": "risko2016offloading",
+      "path": "papers/pdfs/risko2016offloading_tics.pdf",
+      "bytes": 2080835
+    }
+  ],
+  "missing": []
+}
