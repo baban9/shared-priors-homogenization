@@ -30,7 +30,7 @@ cs.AI
 
 **Comments**
 ```
-9 pages. Code and analysis tables: https://github.com/baban9/shared-priors-homogenization
+10 pages. Code and analysis tables: https://github.com/baban9/shared-priors-homogenization
 ```
 
 **Abstract**
@@ -47,27 +47,21 @@ or CC-BY-4.0 if preferred. Code in the GitHub repo is MIT.
 Upload LaTeX source (preferred), not only PDF:
 
 ```
-paper/main.tex
-paper/references.bib
-paper/figures/fig_multicorpus.png
-paper/figures/fig_study1_contrasts.png   # optional if unused in tex
+main.tex
+references.bib
+figures/fig_multicorpus.png
 ```
 
-Compile locally first:
-
-```bash
-cd paper && tectonic -X compile main.tex
-```
-
-Or with pdflatex + bibtex. Prefer `pdflatex` on arXiv because figures are PNG.
+Flat layout tip: from `paper/`, upload those three paths (plus any style files). Prefer `pdflatex` because figures are PNG.
 
 ## Do not upload to arXiv
 
 - `.venv/`
-- raw `data/real/` dumps (2GB+; cite upstream URLs)
+- raw `data/real/` dumps
 - literature PDF archive under `papers/pdfs/`
-- social/ marketing assets
+- social/ assets
+- simulation outputs (`results/summary.json`)
 
-## GitHub repo (analysis + tables)
+## GitHub repo
 
 https://github.com/baban9/shared-priors-homogenization
